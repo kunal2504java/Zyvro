@@ -1,0 +1,24 @@
+# Core dependencies for browser automation
+playwright>=1.40.0
+
+# WhatsApp Bot (Twilio-based)
+flask>=3.0.0
+twilio>=8.10.0
+
+# WhatsApp Web Bot (Selenium-based)
+selenium>=4.15.0
+webdriver-manager>=4.0.1
+
+# Zomato MCP Agent (optional - only if using Zomato)
+# Uncomment these if you need Zomato integration:
+# langchain-mcp-adapters>=0.1.0
+# langgraph>=0.0.20
+# langchain-openai>=0.0.2
+# langchain-core>=0.3.36
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Optional: For async support
+nest-asyncio>=1.5.8

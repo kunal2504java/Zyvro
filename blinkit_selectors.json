@@ -1,0 +1,2973 @@
+{
+  "success": true,
+  "foundSelector": "div[class*=\"product\"]",
+  "totalProducts": 1,
+  "structure": {
+    "containerSelector": "div[class*=\"product\"]",
+    "containerHTML": "<div class=\"categories-table has-less-products search-wrapper\"><div><div data-pf=\"reset\" style=\"grid-column: span 12; width: 100%; height: 100%;\"><div id=\"autosuggest_snippet_1\" class=\"tw-relative tw-overflow-hidden\" data-pf=\"reset\"><div data-pf=\"reset\"><div data-pf=\"reset\" style=\"background-color: rgb(255, 255, 255); padding: 0px 8px 8px;\"><div class=\"tw-grid tw-grid-cols-12 tw-place-items-start\" data-pf=\"reset\" style=\"gap: 8px;\"><div class=\"z-10 tw-z-10\" data-pf=\"reset\" style=\"grid-column: spa",
+    "containerClasses": "categories-table has-less-products search-wrapper",
+    "childElements": [
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-overflow-hidden",
+        "text": "Milk\nFull cream milk\nCow milk\nAmul milk\nMilk powde",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-grid tw-grid-cols-12 tw-place-items-start",
+        "text": "Milk\nFull cream milk\nCow milk\nAmul milk\nMilk powde",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "z-10 tw-z-10",
+        "text": "Milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex-0 tw-flex tw-w-full tw-flex-row",
+        "text": "Milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mr-1.5 tw-mt-1 tw-aspect-square tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-white-900 tw-overflow-hidden tw-rounded-lg tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100 tw-rounded-lg",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mt-1 tw-flex tw-flex-col tw-justify-center",
+        "text": "Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-400 tw-font-semibold tw-line-clamp-1",
+        "text": "Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-grey-700 tw-text-400 tw-font-medium",
+        "text": "Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-auto tw-flex tw-min-w-fit tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "z-10 tw-z-10",
+        "text": "Full cream milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex-0 tw-flex tw-w-full tw-flex-row",
+        "text": "Full cream milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mr-1.5 tw-mt-1 tw-aspect-square tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-white-900 tw-overflow-hidden tw-rounded-lg tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100 tw-rounded-lg",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mt-1 tw-flex tw-flex-col tw-justify-center",
+        "text": "Full cream milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-400 tw-font-semibold tw-line-clamp-1",
+        "text": "Full cream milk",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-black-900 tw-text-400 tw-font-semibold",
+        "text": "Full cream ",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-grey-700 tw-text-400 tw-font-medium",
+        "text": "milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-auto tw-flex tw-min-w-fit tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "z-10 tw-z-10",
+        "text": "Cow milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex-0 tw-flex tw-w-full tw-flex-row",
+        "text": "Cow milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mr-1.5 tw-mt-1 tw-aspect-square tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-white-900 tw-overflow-hidden tw-rounded-lg tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100 tw-rounded-lg",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mt-1 tw-flex tw-flex-col tw-justify-center",
+        "text": "Cow milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-400 tw-font-semibold tw-line-clamp-1",
+        "text": "Cow milk",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-black-900 tw-text-400 tw-font-semibold",
+        "text": "Cow ",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-grey-700 tw-text-400 tw-font-medium",
+        "text": "milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-auto tw-flex tw-min-w-fit tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "z-10 tw-z-10",
+        "text": "Amul milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex-0 tw-flex tw-w-full tw-flex-row",
+        "text": "Amul milk",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mr-1.5 tw-mt-1 tw-aspect-square tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-white-900 tw-overflow-hidden tw-rounded-lg tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100 tw-rounded-lg",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mt-1 tw-flex tw-flex-col tw-justify-center",
+        "text": "Amul milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-400 tw-font-semibold tw-line-clamp-1",
+        "text": "Amul milk",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-black-900 tw-text-400 tw-font-semibold",
+        "text": "Amul ",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-grey-700 tw-text-400 tw-font-medium",
+        "text": "milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-auto tw-flex tw-min-w-fit tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "z-10 tw-z-10",
+        "text": "Milk powder",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex-0 tw-flex tw-w-full tw-flex-row",
+        "text": "Milk powder",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mr-1.5 tw-mt-1 tw-aspect-square tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-white-900 tw-overflow-hidden tw-rounded-lg tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100 tw-rounded-lg",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mt-1 tw-flex tw-flex-col tw-justify-center",
+        "text": "Milk powder",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-400 tw-font-semibold tw-line-clamp-1",
+        "text": "Milk powder",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-grey-700 tw-text-400 tw-font-medium",
+        "text": "Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "tw-text-black-900 tw-text-400 tw-font-semibold",
+        "text": " powder",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-auto tw-flex tw-min-w-fit tw-items-center tw-justify-center ",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-flex-row tw-justify-between tw-items-center tw-w-full tw-px-3 tw-pb-3 tw-pt-4",
+        "text": "Showing results for \"milk\"",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-flex-1 tw-flex-col tw-items-start tw-gap-1",
+        "text": "Showing results for \"milk\"",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-400 tw-font-bold tw-line-clamp-2",
+        "text": "Showing results for \"milk\"",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Humpy Farms Cow A2 Milk\n500 ml\n\u20b949\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Humpy Farms Cow A2 Milk\n500 ml\n\u20b949\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Humpy Farms Cow A2 Milk\n500 ml\n\u20b949\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Humpy Farms Cow A2 Milk\n500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Humpy Farms Cow A2 Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Humpy Farms Cow A2 Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b949\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b949",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Gold Full Cream Milk\n1 ltr\n\u20b969\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Gold Full Cream Milk\n1 ltr\n\u20b969\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Gold Full Cream Milk\n1 ltr\n\u20b969\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Gold Full Cream Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Gold Full Cream Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Gold Full Cream Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1 tw-text-base-green",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-full",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon- tw-text-600 tw-text-green-700",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon-down-triangle tw-inline-flex tw-ml-1.5 tw-text-base-green tw-text-[8px]",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b969\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b969",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Taaza Toned Milk\n500 ml\n\u20b929\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Taaza Toned Milk\n500 ml\n\u20b929\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Taaza Toned Milk\n500 ml\n\u20b929\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Taaza Toned Milk\n500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Taaza Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Taaza Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1 tw-text-base-green",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-full",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon- tw-text-600 tw-text-green-700",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon-down-triangle tw-inline-flex tw-ml-1.5 tw-text-base-green tw-text-[8px]",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b929\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b929",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Cow Milk\n500 ml\n\u20b930\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Cow Milk\n500 ml\n\u20b930\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Cow Milk\n500 ml\n\u20b930\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Cow Milk\n500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Cow Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Cow Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b930\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b930",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "12% OFF\nCountry Delight Cow Fresh Milk\n450 ml\n\u20b942\n",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "12% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "12% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Country Delight Cow Fresh Milk\n450 ml\n\u20b942\n\u20b948\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Country Delight Cow Fresh Milk\n450 ml\n\u20b942\n\u20b948\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Country Delight Cow Fresh Milk\n450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Country Delight Cow Fresh Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Country Delight Cow Fresh Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b942\n\u20b948\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b942",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b948",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b948",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy Toned Milk\n500 ml\n\u20b929\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy Toned Milk\n500 ml\n\u20b929\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy Toned Milk\n500 ml\n\u20b929\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy Toned Milk\n500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b929\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b929",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy Cow Milk\n1 ltr\n\u20b959\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy Cow Milk\n1 ltr\n\u20b959\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy Cow Milk\n1 ltr\n\u20b959\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy Cow Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy Cow Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy Cow Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1 tw-text-base-green",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-full",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon- tw-text-600 tw-text-green-700",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon-down-triangle tw-inline-flex tw-ml-1.5 tw-text-base-green tw-text-[8px]",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b959\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b959",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy Full Cream Milk\n500 ml\n\u20b935\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy Full Cream Milk\n500 ml\n\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy Full Cream Milk\n500 ml\n\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy Full Cream Milk\n500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy Full Cream Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy Full Cream Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1 tw-text-base-green",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-full",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon- tw-text-600 tw-text-green-700",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon-down-triangle tw-inline-flex tw-ml-1.5 tw-text-base-green tw-text-[8px]",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b935",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "25% OFF\nSunfeast Baked Creations French Style Butt",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "25% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "25% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Sunfeast Baked Creations French Style Butter Cooki",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Sunfeast Baked Creations French Style Butter Cooki",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Sunfeast Baked Creations French Style Butter Cooki",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Sunfeast Baked Creations French Style Butter Cooki",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Sunfeast Baked Creations French Style Butter Cooki",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "112.5 g",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "112.5 g",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b9105\n\u20b9140\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b9105",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b9140",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b9140",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy Toned Toned Milk\n1 ltr\n\u20b957\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy Toned Toned Milk\n1 ltr\n\u20b957\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy Toned Toned Milk\n1 ltr\n\u20b957\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy Toned Toned Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy Toned Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy Toned Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b957\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b957",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Taaza Homogenised Toned Milk\n1 ltr\n\u20b972\n\u20b975\nAD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Taaza Homogenised Toned Milk\n1 ltr\n\u20b972\n\u20b975\nAD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Taaza Homogenised Toned Milk\n1 ltr\n\u20b972\n\u20b975\nAD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Taaza Homogenised Toned Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Taaza Homogenised Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Taaza Homogenised Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b972\n\u20b975\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b972",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b975",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b975",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "6% OFF\nAmul Moti Toned Milk (90 Days Shelf Life)\n4",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "6% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "6% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Moti Toned Milk (90 Days Shelf Life)\n450 ml\n\u20b9",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Moti Toned Milk (90 Days Shelf Life)\n450 ml\n\u20b9",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Moti Toned Milk (90 Days Shelf Life)\n450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Moti Toned Milk (90 Days Shelf Life)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Moti Toned Milk (90 Days Shelf Life)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b931\n\u20b933\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b931",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b933",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b933",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "14% OFF\nSunfeast Baked Creations Rich Choco Chip C",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "14% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "14% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Sunfeast Baked Creations Rich Choco Chip Cookies\n1",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Sunfeast Baked Creations Rich Choco Chip Cookies\n1",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Sunfeast Baked Creations Rich Choco Chip Cookies\n1",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Sunfeast Baked Creations Rich Choco Chip Cookies",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Sunfeast Baked Creations Rich Choco Chip Cookies",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "120 g",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "120 g",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b9145\n\u20b9170\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b9145",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b9170",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b9170",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Gold Milk\n1 ltr\n\u20b980\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Gold Milk\n1 ltr\n\u20b980\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Gold Milk\n1 ltr\n\u20b980\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Gold Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Gold Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Gold Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b980\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b980",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Taaza Toned Milk\n200 ml\n\u20b916\nADD",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Taaza Toned Milk\n200 ml\n\u20b916\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Taaza Toned Milk\n200 ml\n\u20b916\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Taaza Toned Milk\n200 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Taaza Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Taaza Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "200 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1 tw-text-base-green",
+        "text": "200 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-full",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon- tw-text-600 tw-text-green-700",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon-down-triangle tw-inline-flex tw-ml-1.5 tw-text-base-green tw-text-[8px]",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b916\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b916",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "450 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b932\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b932",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "14% OFF\nSunfeast Baked Creations Oats & Hazelnut C",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "14% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "14% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Sunfeast Baked Creations Oats & Hazelnut Cookies\n(",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Sunfeast Baked Creations Oats & Hazelnut Cookies\n(",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Sunfeast Baked Creations Oats & Hazelnut Cookies\n(",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Sunfeast Baked Creations Oats & Hazelnut Cookies",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Sunfeast Baked Creations Oats & Hazelnut Cookies",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "(120-6) g",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "(120-6) g",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b9129\n\u20b9150\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b9129",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b9150",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b9150",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Slim 'n' Trim Skimmed Milk (Zero Cholesterol)",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": true
+      },
+      {
+        "tag": "IMG",
+        "classes": "tw-h-full tw-w-full tw-transition-opacity tw-opacity-100",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Slim 'n' Trim Skimmed Milk (Zero Cholesterol)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Slim 'n' Trim Skimmed Milk (Zero Cholesterol)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Slim 'n' Trim Skimmed Milk (Zero Cholesterol)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Slim 'n' Trim Skimmed Milk (Zero Cholesterol)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Slim 'n' Trim Skimmed Milk (Zero Cholesterol)",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b982\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b982",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-gradient-to-r tw-from-grey-100 tw-to-grey-200 motion-safe:tw-animate-pulse tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy FIT Life Homogenized Double Toned Mil",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "115 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "115 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b910\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b910",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy Pro Milk\n500 ml\n\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-gradient-to-r tw-from-grey-100 tw-to-grey-200 motion-safe:tw-animate-pulse tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy Pro Milk\n500 ml\n\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy Pro Milk\n500 ml\n\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy Pro Milk\n500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy Pro Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy Pro Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b935\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b935",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "16% OFF\nAmul Gold Full Cream Fresh Milk + Banana R",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "16% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "16% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-gradient-to-r tw-from-grey-100 tw-to-grey-200 motion-safe:tw-animate-pulse tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Gold Full Cream Fresh Milk + Banana Robusta R",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Gold Full Cream Fresh Milk + Banana Robusta R",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Gold Full Cream Fresh Milk + Banana Robusta R",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Gold Full Cream Fresh Milk + Banana Robusta R",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Gold Full Cream Fresh Milk + Banana Robusta R",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "3 pieces + 500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "3 pieces + 500 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b975\n\u20b990\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b975",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b990",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b990",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Mother Dairy Toned Milk\n1 ltr\n\u20b975\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-gradient-to-r tw-from-grey-100 tw-to-grey-200 motion-safe:tw-animate-pulse tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Mother Dairy Toned Milk\n1 ltr\n\u20b975\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Mother Dairy Toned Milk\n1 ltr\n\u20b975\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Mother Dairy Toned Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Mother Dairy Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Mother Dairy Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b975\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b975",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "5% OFF\nNestle a+ Toned Milk\n1 ltr\n\u20b9105\n\u20b9111\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-absolute tw-left-3 tw-top-0 tw-z-10 tw-flex tw-items-center tw-justify-center",
+        "text": "5% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-050 tw-absolute tw-z-20 tw-w-5 tw-text-center tw-text-[9px] tw-font-extrabold tw-text-white-900",
+        "text": "5% OFF",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-gradient-to-r tw-from-grey-100 tw-to-grey-200 motion-safe:tw-animate-pulse tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Nestle a+ Toned Milk\n1 ltr\n\u20b9105\n\u20b9111\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Nestle a+ Toned Milk\n1 ltr\n\u20b9105\n\u20b9111\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Nestle a+ Toned Milk\n1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Nestle a+ Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Nestle a+ Toned Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1",
+        "text": "1 ltr",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b9105\n\u20b9111\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b9105",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b9111",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b9111",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-flex tw-h-full tw-flex-col tw-items-start tw-gap-0.5 tw-pb-3 tw-bg-indigo-050 tw-border-[0.5px] tw-border-grey-200",
+        "text": "Amul Calci+ Milk\n250 ml\n\u20b925\n\u20b926\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-relative tw-w-full tw-overflow-hidden tw-px-2.5",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-bg-gradient-to-r tw-from-grey-100 tw-to-grey-200 motion-safe:tw-animate-pulse tw-overflow-hidden tw-flex tw-flex-col",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-w-full tw-px-3",
+        "text": "Amul Calci+ Milk\n250 ml\n\u20b925\n\u20b926\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-wrap tw-gap-1",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-w-full tw-flex-col",
+        "text": "Amul Calci+ Milk\n250 ml\n\u20b925\n\u20b926\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-2 tw-flex tw-flex-col tw-text-400",
+        "text": "Amul Calci+ Milk\n250 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-mb-1.5",
+        "text": "Amul Calci+ Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-300 tw-font-semibold tw-line-clamp-2",
+        "text": "Amul Calci+ Milk",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center",
+        "text": "250 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-medium tw-line-clamp-1 tw-text-base-green",
+        "text": "250 ml",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-ml-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-full",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon- tw-text-600 tw-text-green-700",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "icon-down-triangle tw-inline-flex tw-ml-1.5 tw-text-base-green tw-text-[8px]",
+        "text": "",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-flex tw-items-center tw-justify-between",
+        "text": "\u20b925\n\u20b926\nADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-semibold",
+        "text": "\u20b925",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-text-200 tw-font-regular tw-line-through",
+        "text": "\u20b926",
+        "hasImage": false
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "text": "\u20b926",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "tw-rounded-md tw-font-okra tw-flex tw-items-center tw-justify-center tw-flex-col tw-font-semibold tw-overflow-hidden tw-text-300 tw-px-0 tw-gap-0.5 tw-min-w-[66px] tw-min-h-[32px] tw-bg-green-050 tw-border tw-border-base-green tw-text-base-green",
+        "text": "ADD",
+        "hasImage": false
+      },
+      {
+        "tag": "DIV",
+        "classes": "",
+        "text": "ADD",
+        "hasImage": false
+      }
+    ]
+  },
+  "sampleProducts": [
+    {
+      "index": 0,
+      "allClasses": "categories-table has-less-products search-wrapper",
+      "innerHTML": "<div><div data-pf=\"reset\" style=\"grid-column: span 12; width: 100%; height: 100%;\"><div id=\"autosuggest_snippet_1\" class=\"tw-relative tw-overflow-hidden\" data-pf=\"reset\"><div data-pf=\"reset\"><div data-pf=\"reset\" style=\"background-color: rgb(255, 255, 255); padding: 0px 8px 8px;\"><div class=\"tw-grid ",
+      "imageAlt": "",
+      "imageSrc": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/da/cms-assets/cm"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[36260:34676:1115/141942.094:INFO:components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc:206] No machine level policy manager exists.
+[1896:33784:1115/141942.224:VERBOSE1:components\viz\service\main\viz_main_impl.cc:86] VizNullHypothesis is disabled (not a warning)
+[32800:20996:1115/141942.256:INFO:third_party\webrtc\rtc_base\cpu_info.cc:75] Available number of cores: 12
+[36696:3144:1115/141942.256:INFO:third_party\webrtc\rtc_base\cpu_info.cc:75] Available number of cores: 12
+[33280:27632:1115/141942.569:INFO:third_party\webrtc\rtc_base\cpu_info.cc:75] Available number of cores: 12
+[5580:12972:1115/141942.575:INFO:third_party\webrtc\rtc_base\cpu_info.cc:75] Available number of cores: 12
+[30760:32140:1115/141942.588:INFO:third_party\webrtc\rtc_base\cpu_info.cc:75] Available number of cores: 12
+[34388:19028:1115/141942.899:INFO:third_party\webrtc\rtc_base\cpu_info.cc:75] Available number of cores: 12
+[36260:34676:1115/141942.952:INFO:CONSOLE:113] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ys/r/nwe-VHWZNej.js (113)
+[36260:34676:1115/141957.825:INFO:CONSOLE:77] "ErrorUtils caught an error:
+
+Converting to a string will drop content data. Hash="undefined" Translation="{user_name} added {names}" Content="Context not logged." (type=object,Object)
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yj/r/GEg0u14rq3U.js (77)
+[1896:28780:1115/142006.934:ERROR:gpu\command_buffer\service\shared_image\shared_image_manager.cc:526] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.
+[1896:28780:1115/142006.935:ERROR:gpu\command_buffer\service\shared_image\shared_image_manager.cc:526] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.
+[1896:28780:1115/142006.935:ERROR:gpu\command_buffer\service\shared_image\shared_image_manager.cc:526] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.
+[36260:19328:1115/142015.144:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: DEPRECATED_ENDPOINT
+[36260:34676:1115/142027.131:WARNING:chrome\browser\performance_manager\policies\page_discarding_helper.cc:139] Discarding multiple pages with target (kb): 0, discard_protected_tabs: 0
+[36260:19328:1115/142041.932:ERROR:google_apis\gcm\engine\registration_request.cc:292] Registration response error message: DEPRECATED_ENDPOINT
