@@ -1,6 +1,31 @@
-# Multi-Platform Ordering Agents
+# Multi-Platform Grocery Ordering Bot
 
-Automated ordering system for Zepto, Blinkit, and Zomato using browser automation and MCP.
+WhatsApp bot for ordering from Zepto, Blinkit, Instamart, and BigBasket through natural language conversations in English and Hinglish.
+
+## 📁 Project Structure
+
+```
+blinkit_mcp/
+├── agents/              # Platform-specific ordering agents
+│   ├── zepto.py        # Zepto agent
+│   ├── blinkit.py      # Blinkit agent
+│   ├── instamart.py    # Instamart agent
+│   ├── bigbasket.py    # BigBasket agent
+│   └── zomato_simple.py # Zomato agent (optional)
+├── utils/              # Utility modules
+│   └── conversation_ai.py # AI conversation handler (Gemini)
+├── tests/              # Test scripts
+│   ├── test_*.py       # Various test files
+│   └── setup_*.py      # Setup scripts
+├── data/               # Data files (state, selectors)
+│   ├── *_state.json    # Session state files
+│   └── blinkit_selectors.json
+├── whatsapp_session/   # WhatsApp session data
+├── whatsapp_bot.py     # Main WhatsApp bot
+├── requirements.txt    # Python dependencies
+├── .env               # Environment variables
+└── README.md          # This file
+```
 
 ## 🚀 Quick Start
 
@@ -10,265 +35,95 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### 2. Set Up Sessions
+### 2. Set Up Environment Variables
+Create a `.env` file in the root directory:
+```env
+# Twilio (for WhatsApp)
+TWILIO_ACCOUNT_SID=your_account_sid
+TWILIO_AUTH_TOKEN=your_auth_token
+TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
+
+# Google AI (for conversation)
+GOOGLE_API_KEY=your_gemini_api_key
+```
+
+### 3. Set Up Sessions
 ```bash
-python setup_session.py
+cd blinkit_mcp
+python tests/setup_session.py
 ```
 This will open browsers for you to log in to Zepto and Blinkit. Sessions are saved for future use.
 
-### 3. Test the Agents
-```bash
-# Test Zepto
-python test_zepto.py
-
-# Test Blinkit
-python test_blinkit.py
-```
-
-## 📦 What's Included
-
-### Platform Agents
-- **zepto.py** - Zepto ordering agent (async)
-- **blinkit.py** - Blinkit ordering agent (sync)
-- **zomato.py** - Zomato restaurant search (MCP-based)
-
-### WhatsApp Integration
-- **whatsapp_bot.py** - Twilio-based WhatsApp bot (production-ready)
-
-### Utilities
-- **setup_session.py** - Session setup wizard
-- **test_zepto.py** - Zepto agent tests
-- **test_blinkit.py** - Blinkit agent tests
-
-## 💻 Usage Examples
-
-### Zepto Agent
-```python
-import asyncio
-from zepto import ZeptoAgent
-
-async def main():
-    zepto = ZeptoAgent()
-    
-    # Search products
-    products = await zepto.search_products("milk", limit=5)
-    
-    # Add to cart
-    urls = [p['url'] for p in products[:2]]
-    await zepto.add_to_cart(urls)
-    
-    # View cart
-    cart = await zepto.view_cart()
-    print(f"Cart total: ₹{cart['subtotal']}")
-    
-    # Check coupons
-    await zepto.check_coupons(auto_apply=True)
-    
-    # Place order
-    order = await zepto.place_order()
-    print(f"Order ID: {order['order_id']}")
-
-asyncio.run(main())
-```
-
-### Blinkit Agent
-```python
-from blinkit import BlinkitAgent
-
-blinkit = BlinkitAgent()
-
-# Search products
-products = blinkit.search_products("bread", limit=5)
-
-# Add to cart
-urls = [p['url'] for p in products[:2]]
-blinkit.add_to_cart(urls)
-
-# View cart
-cart = blinkit.view_cart()
-print(f"Cart: {cart['total_items']} items, ₹{cart['subtotal']}")
-```
-
-### Zomato Agent
-```python
-import asyncio
-from zomato import ZomatoAgent
-
-async def main():
-    zomato = ZomatoAgent()
-    await zomato.initialize()
-    
-    # Search restaurants
-    await zomato.search_restaurants("biryani", location="Bangalore")
-    
-    # Get order history
-    await zomato.get_order_history()
-    
-    await zomato.close()
-
-asyncio.run(main())
-```
-
-## 📱 WhatsApp Bot (Twilio)
-
-For production WhatsApp integration, use the Twilio-based bot:
-
-### Setup
-1. Create Twilio account at https://www.twilio.com
-2. Set up WhatsApp sandbox
-3. Configure environment variables:
-```bash
-set TWILIO_ACCOUNT_SID=your_sid
-set TWILIO_AUTH_TOKEN=your_token
-```
-
-4. Run the bot:
+### 4. Run the WhatsApp Bot
 ```bash
 python whatsapp_bot.py
 ```
 
-5. Expose with ngrok:
+### 5. Expose to Internet (for WhatsApp webhook)
 ```bash
 ngrok http 5000
 ```
+Then set the webhook URL in Twilio console to: `https://your-ngrok-url/webhook`
 
-6. Set webhook in Twilio console to: `https://your-ngrok-url/webhook`
+## 💬 Usage
 
-### Usage
-Send WhatsApp messages:
-- `search for milk on zepto`
-- `search for bread on blinkit`
-- `add 1` (after search)
-- `view cart`
-- `checkout`
+The bot understands natural English and Hinglish conversations:
 
-See `WHATSAPP_FINAL_SUMMARY.md` for detailed setup guide.
+**Casual Chat:**
+- "Biryani khane ka mann hai" → Bot asks if you want to order or make it
+- "Chicken tikka banana hai" → Bot suggests ingredients
 
-## 🔧 Features
+**Ordering:**
+- "Order biryani from Zepto" → Searches for biryani
+- "Yes" (after ingredient suggestion) → Searches for all ingredients
+- "Add all" → Adds all items to cart
+- "Checkout" → Places the order
 
-### Zepto Agent
-- ✅ Product search
-- ✅ Add to cart
-- ✅ View cart
-- ✅ Check coupons (with auto-apply)
-- ✅ Place order (COD/UPI)
+**Commands:**
+- "View cart" → Shows cart contents
+- "Coupons" → Shows available coupons (Zepto only)
 
-### Blinkit Agent
-- ✅ Product search
-- ✅ Add to cart
-- ✅ View cart
-- 🚧 Update quantity (in progress)
-- 🚧 Checkout (in progress)
+## 🧪 Testing
 
-### Zomato Agent
-- ✅ Restaurant search
-- ✅ Get menu
-- ✅ Order history
-- ✅ Natural language queries
-
-## 📁 File Structure
-
-```
-blinkit_mcp/
-├── zepto.py                    # Zepto agent
-├── blinkit.py                  # Blinkit agent
-├── zomato.py                   # Zomato agent
-├── whatsapp_bot.py             # Twilio WhatsApp bot
-├── setup_session.py            # Session setup
-├── test_zepto.py               # Zepto tests
-├── test_blinkit.py             # Blinkit tests
-├── requirements.txt            # Dependencies
-├── zepto_state.json            # Zepto session
-├── blinkit_state.json          # Blinkit session
-├── README.md                   # This file
-└── WHATSAPP_FINAL_SUMMARY.md   # WhatsApp integration guide
+Run individual platform tests:
+```bash
+cd blinkit_mcp
+python tests/test_zepto.py
+python tests/test_blinkit.py
+python tests/test_instamart.py
 ```
 
-## 🔐 Session Management
-
-Sessions are stored in JSON files:
-- `zepto_state.json` - Zepto login session
-- `blinkit_state.json` - Blinkit login session
-
-If sessions expire, run `python setup_session.py` again.
-
-## 🎯 Common Use Cases
-
-### Automated Grocery Shopping
-```python
-import asyncio
-from zepto import ZeptoAgent
-
-async def weekly_groceries():
-    zepto = ZeptoAgent()
-    items = ["milk", "bread", "eggs", "butter"]
-    
-    for item in items:
-        products = await zepto.search_products(item, limit=1)
-        if products:
-            await zepto.add_to_cart(products[0]['url'])
-    
-    await zepto.check_coupons(auto_apply=True)
-    order = await zepto.place_order()
-    return order
-
-asyncio.run(weekly_groceries())
+Test AI conversation:
+```bash
+python tests/test_ai_conversation.py
 ```
 
-### Price Comparison
-```python
-import asyncio
-from zepto import ZeptoAgent
-from blinkit import BlinkitAgent
+## 🛠️ Features
 
-async def compare_prices(item):
-    zepto = ZeptoAgent()
-    blinkit = BlinkitAgent()
-    
-    zepto_products = await zepto.search_products(item, limit=1)
-    blinkit_products = blinkit.search_products(item, limit=1)
-    
-    print(f"Zepto: ₹{zepto_products[0]['price']}")
-    print(f"Blinkit: ₹{blinkit_products[0]['price']}")
+- **Multi-Platform Support**: Zepto, Blinkit, Instamart, BigBasket
+- **Natural Language**: Understands English and Hinglish
+- **AI-Powered**: Uses Gemini 2.0 Flash for conversation
+- **Ingredient Suggestions**: Suggests ingredients for recipes
+- **WhatsApp Integration**: Order through WhatsApp messages
+- **Session Management**: Saves login sessions for reuse
+- **Cart Management**: Add, view, and checkout items
+- **Coupon Support**: Auto-applies best coupons (Zepto)
 
-asyncio.run(compare_prices("milk"))
-```
+## 📝 Notes
 
-## 🐛 Troubleshooting
+- The bot sends multiple messages for ingredient searches to avoid WhatsApp's 1600 character limit
+- Sessions are stored in `data/` folder
+- WhatsApp session data is stored in `whatsapp_session/` folder
+- All state files are gitignored for privacy
 
-### "FileNotFoundError: zepto_state.json"
-Run `python setup_session.py` to create session files.
+## 🔧 Development
 
-### "Session expired"
-Delete `*_state.json` files and run `python setup_session.py` again.
-
-### Products not found
-Platform UI may have changed. Check if selectors need updating.
-
-## 📚 Documentation
-
-- **README.md** - This file (quick start and usage)
-- **WHATSAPP_FINAL_SUMMARY.md** - Complete WhatsApp integration guide
-- **requirements.txt** - Python dependencies
-
-## 🚀 Future Platforms
-
-Planned support for:
-- Swiggy
-- Instamart
-- Bistro
-- Amazon
-- Flipkart
-- Myntra
+To add a new platform agent:
+1. Create a new file in `agents/` folder
+2. Implement the required methods: `search_products`, `add_to_cart`, `view_cart`, `place_order`
+3. Import it in `whatsapp_bot.py`
+4. Add tests in `tests/` folder
 
 ## 📄 License
 
 MIT
-
-## 🙏 Acknowledgments
-
-Built with:
-- Playwright (browser automation)
-- Selenium (WhatsApp Web)
-- Twilio (WhatsApp Business API)
-- LangChain (Zomato MCP)

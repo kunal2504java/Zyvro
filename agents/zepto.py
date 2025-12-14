@@ -15,7 +15,7 @@ async def get_browser():
 
 class ZeptoAgent:
     def __init__(self):
-        self.state = "zepto_state.json"
+        self.state = "data/zepto_state.json"
         self.base_url = "https://www.zeptonow.com"
     
     def _get_storage_state(self):
@@ -495,8 +495,44 @@ class ZeptoAgent:
         context = await browser.new_context(storage_state=storage_state) if storage_state else await browser.new_context()
         page = await context.new_page()
 
-        print("🛒 Opening cart checkout page...")
-        await page.goto(f"{self.base_url}/?cart=open", wait_until="domcontentloaded")
+        print("🛒 Opening cart...")
+        await page.goto(f"{self.base_url}", wait_until="domcontentloaded")
+        
+        # Wait for page to load
+        await page.wait_for_timeout(2000)
+        
+        # Click the cart icon to open cart
+        try:
+            # Try to find and click the cart button
+            cart_selectors = [
+                'button[aria-label*="cart" i]',
+                'button[aria-label*="Cart" i]',
+                'svg[viewBox="0 0 24 24"]',  # The cart SVG
+                '[data-testid="cart-button"]',
+                'button:has(svg[viewBox="0 0 24 24"])'
+            ]
+            
+            cart_clicked = False
+            for selector in cart_selectors:
+                try:
+                    cart_button = page.locator(selector).first
+                    if await cart_button.count() > 0:
+                        print(f"🟢 Clicking cart button...")
+                        await cart_button.click()
+                        cart_clicked = True
+                        break
+                except:
+                    continue
+            
+            if not cart_clicked:
+                # Try URL parameter as fallback
+                await page.goto(f"{self.base_url}/?cart=open", wait_until="domcontentloaded")
+            
+            # Wait for cart to open
+            await page.wait_for_timeout(3000)
+            
+        except Exception as e:
+            print(f"⚠️ Could not open cart: {e}")
 
         result = {
             "checkout_started": False,
@@ -510,17 +546,38 @@ class ZeptoAgent:
         }
 
         try:
-            # Step 1 — Click 'Click to Pay'
-            await page.wait_for_selector("button:has-text('Click to Pay')", timeout=5000)
-            click_to_pay_btn = page.locator("button:has-text('Click to Pay')").first
+            # Step 1 — Click 'Click to Pay' or 'Proceed to Checkout'
+            # Try multiple selectors
+            checkout_button = None
+            selectors_to_try = [
+                "button.bg-skin-primary:has-text('Click to Pay')",  # Exact selector from HTML
+                "button:has-text('Click to Pay')",
+                "button.rounded-xl:has-text('Click to Pay')",
+                "button:has-text('Proceed to Checkout')",
+                "button:has-text('Checkout')",
+                "[data-testid='checkout-button']",
+                "button[class*='checkout']"
+            ]
+            
+            for selector in selectors_to_try:
+                try:
+                    await page.wait_for_selector(selector, timeout=5000)
+                    checkout_button = page.locator(selector).first
+                    print(f"🟢 Found checkout button with selector: {selector}")
+                    break
+                except:
+                    continue
+            
+            if not checkout_button:
+                raise Exception("Could not find checkout button")
 
-            print("🟢 Clicking 'Click to Pay'...")
-            await click_to_pay_btn.click()
+            print("🟢 Clicking checkout button...")
+            await checkout_button.click()
             result["click_to_pay_clicked"] = True
             result["checkout_started"] = True
 
             # Wait for payment page
-            await page.wait_for_timeout(3000)
+            await page.wait_for_timeout(5000)
 
             # Step 2 — Find Juspay frame
             frames = page.frames

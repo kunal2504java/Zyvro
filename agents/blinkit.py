@@ -19,7 +19,7 @@ import time
 
 class BlinkitAgent:
     def __init__(self):
-        self.state = "blinkit_state.json"
+        self.state = "data/blinkit_state.json"
         self.base_url = "https://blinkit.com"
         
     def search_products(self, query: str, limit: int = 10):
@@ -214,39 +214,78 @@ class BlinkitAgent:
                     # Navigate to search page with product name to find it
                     search_query = search_term.replace(' ', '%20')
                     page.goto(f"{self.base_url}/s/?q={search_query}", wait_until="domcontentloaded")
-                    time.sleep(2)
+                    time.sleep(3)  # Increased wait time for page to fully load
                     
-                    # Click the first ADD button on the search results page
+                    # Wait for product cards to appear
+                    try:
+                        page.wait_for_selector('.tw-text-300.tw-font-semibold.tw-line-clamp-2', timeout=5000)
+                    except:
+                        print(f"  ⚠️ Products not loaded for: {search_term}")
+                    
+                    # Click the first ADD button on the search results page with improved detection
                     add_clicked = page.evaluate("""
                         () => {
-                            // Find all ADD buttons with the specific class
-                            const addButtons = document.querySelectorAll('.tw-rounded-md.tw-font-okra[role="button"]');
-                            
-                            for (const button of addButtons) {
-                                const text = button.innerText || button.textContent;
-                                if (text && text.trim() === 'ADD') {
-                                    button.click();
-                                    return true;
+                            // Strategy 1: Look for buttons with specific Tailwind classes
+                            let buttons = document.querySelectorAll('.tw-rounded-md.tw-font-okra');
+                            for (const button of buttons) {
+                                const text = (button.innerText || button.textContent || '').trim().toUpperCase();
+                                if (text === 'ADD') {
+                                    // Check if button is visible
+                                    const rect = button.getBoundingClientRect();
+                                    if (rect.width > 0 && rect.height > 0) {
+                                        button.click();
+                                        return {success: true, method: 'tailwind-class'};
+                                    }
                                 }
                             }
                             
-                            // Fallback: try any button with ADD text
-                            const allButtons = document.querySelectorAll('[role="button"]');
-                            for (const button of allButtons) {
-                                const text = button.innerText || button.textContent;
-                                if (text && text.includes('ADD')) {
-                                    button.click();
-                                    return true;
+                            // Strategy 2: Look for any button with role="button" and ADD text
+                            buttons = document.querySelectorAll('[role="button"]');
+                            for (const button of buttons) {
+                                const text = (button.innerText || button.textContent || '').trim().toUpperCase();
+                                if (text === 'ADD') {
+                                    const rect = button.getBoundingClientRect();
+                                    if (rect.width > 0 && rect.height > 0) {
+                                        button.click();
+                                        return {success: true, method: 'role-button'};
+                                    }
                                 }
                             }
                             
-                            return false;
+                            // Strategy 3: Look for buttons with green background (ADD buttons are usually green)
+                            buttons = document.querySelectorAll('button, div[role="button"]');
+                            for (const button of buttons) {
+                                const text = (button.innerText || button.textContent || '').trim().toUpperCase();
+                                const style = window.getComputedStyle(button);
+                                const bgColor = style.backgroundColor;
+                                
+                                if (text === 'ADD' && (bgColor.includes('green') || button.className.includes('green'))) {
+                                    button.click();
+                                    return {success: true, method: 'green-button'};
+                                }
+                            }
+                            
+                            // Strategy 4: Look in product cards specifically
+                            const productCards = document.querySelectorAll('.tw-relative.tw-flex.tw-h-full.tw-flex-col');
+                            if (productCards.length > 0) {
+                                const firstCard = productCards[0];
+                                const addButton = firstCard.querySelector('button, [role="button"]');
+                                if (addButton) {
+                                    const text = (addButton.innerText || addButton.textContent || '').trim().toUpperCase();
+                                    if (text === 'ADD') {
+                                        addButton.click();
+                                        return {success: true, method: 'product-card'};
+                                    }
+                                }
+                            }
+                            
+                            return {success: false, method: 'none'};
                         }
                     """)
                     
-                    if add_clicked:
-                        time.sleep(1)
-                        print(f"  ✅ Product {idx} added to cart!")
+                    if add_clicked['success']:
+                        time.sleep(1.5)  # Wait for cart update
+                        print(f"  ✅ Product {idx} added to cart! (method: {add_clicked['method']})")
                         results.append({
                             "success": True,
                             "url": product_urls[idx-1],
@@ -254,11 +293,12 @@ class BlinkitAgent:
                         })
                     else:
                         print(f"  ⚠️ Could not find ADD button for product {idx}")
+                        print(f"     Tried all detection methods, none worked")
                         results.append({
                             "success": False,
                             "url": product_urls[idx-1],
                             "index": idx - 1,
-                            "error": "ADD button not found"
+                            "error": "ADD button not found - product may be out of stock"
                         })
 
                 except Exception as e:
@@ -664,38 +704,136 @@ class BlinkitAgent:
             context = browser.new_context(storage_state=self.state)
             page = context.new_page()
 
-            print("🛒 Opening cart to proceed to checkout...")
-            page.goto(f"{self.base_url}/cart", wait_until="domcontentloaded")
+            print("🛒 Opening cart...")
+            # Go to homepage first
+            page.goto(self.base_url, wait_until="domcontentloaded")
+            time.sleep(3)
+            
+            # Click cart button to open cart modal (same as view_cart)
+            print("🟢 Opening cart modal...")
+            try:
+                cart_button = page.locator('[class*="CartButton"]').first
+                cart_button.click()
+                time.sleep(3)
+                print("✅ Cart modal opened")
+            except Exception as e:
+                print(f"❌ Could not open cart: {e}")
 
             result = {
                 "checkout_started": False,
                 "payment_page_reached": False,
+                "payment_method": None,
+                "order_id": None,
                 "final_status": "unknown",
                 "error": None
             }
 
             try:
-                page.wait_for_selector('[data-test-id="proceed-to-checkout"]', timeout=5000)
+                # First check if cart has items
+                print("� Cohecking if cart has items...")
+                cart_check = page.evaluate("""
+                    () => {
+                        const bodyText = document.body.innerText.toLowerCase();
+                        const isEmpty = bodyText.includes('cart is empty') || 
+                                       bodyText.includes('no items') ||
+                                       bodyText.includes('your cart is empty');
+                        
+                        // Count visible product elements
+                        const products = document.querySelectorAll('[class*="product"], [class*="item"]');
+                        
+                        return {
+                            isEmpty: isEmpty,
+                            productCount: products.length
+                        };
+                    }
+                """)
                 
-                print("🟢 Clicking 'Proceed to Checkout'...")
-                checkout_btn = page.locator('[data-test-id="proceed-to-checkout"]')
-                checkout_btn.click()
+                if cart_check['isEmpty'] or cart_check['productCount'] == 0:
+                    result["error"] = "Cart is empty. Please add items first."
+                    result["final_status"] = "cart_empty"
+                    print("❌ Cart is empty")
+                    context.storage_state(path=self.state)
+                    context.close()
+                    browser.close()
+                    return result
+                
+                print(f"✅ Cart has {cart_check['productCount']} items")
+                
+                # Look for Proceed button in cart modal
+                print("🟢 Looking for Proceed button in cart modal...")
+                time.sleep(2)  # Wait for cart modal to fully load
+                
+                checkout_clicked = page.evaluate("""
+                    () => {
+                        // Strategy 1: Look for AmountContainer (the actual clickable element)
+                        const amountContainer = document.querySelector('[class*="CheckoutStrip__AmountContainer"]');
+                        if (amountContainer) {
+                            const rect = amountContainer.getBoundingClientRect();
+                            if (rect.width > 0 && rect.height > 0) {
+                                amountContainer.click();
+                                return {success: true, text: 'AmountContainer', method: 'amount-container'};
+                            }
+                        }
+                        
+                        // Strategy 2: Look for StripContainer
+                        const stripContainer = document.querySelector('[class*="CheckoutStrip__StripContainer"]');
+                        if (stripContainer) {
+                            const rect = stripContainer.getBoundingClientRect();
+                            if (rect.width > 0 && rect.height > 0) {
+                                stripContainer.click();
+                                return {success: true, text: 'StripContainer', method: 'strip-container'};
+                            }
+                        }
+                        
+                        // Strategy 3: Look for any clickable element with "Proceed" text
+                        const allElements = document.querySelectorAll('div[onclick], div[role="button"], button');
+                        for (const elem of allElements) {
+                            const text = String(elem.innerText || '').trim();
+                            if (text.includes('Proceed') || text.includes('PROCEED')) {
+                                const rect = elem.getBoundingClientRect();
+                                if (rect.width > 0 && rect.height > 0) {
+                                    elem.click();
+                                    return {success: true, text: text, method: 'clickable-proceed'};
+                                }
+                            }
+                        }
+                        
+                        return {success: false, text: null, method: 'none'};
+                    }
+                """)
+                
+                if not checkout_clicked['success']:
+                    result["error"] = "Checkout button not found. Cart might be empty or page structure changed."
+                    result["final_status"] = "checkout_button_not_found"
+                    print("❌ Could not find checkout button")
+                    print("   Tried all detection methods")
+                    context.storage_state(path=self.state)
+                    context.close()
+                    browser.close()
+                    return result
+                
+                print(f"✅ Clicked checkout button: '{checkout_clicked['text']}' (method: {checkout_clicked['method']})")
                 result["checkout_started"] = True
+                time.sleep(7)  # Increased from 5s to 7s for page transition
 
-                time.sleep(3)
-
+                # Check if we reached payment/checkout page
                 current_url = page.url
+                print(f"📍 Current URL: {current_url}")
+                
                 if '/checkout' in current_url or '/payment' in current_url:
                     result["payment_page_reached"] = True
                     result["final_status"] = "reached_payment_page"
+                    result["payment_method"] = "Manual interaction required"
                     print("✅ Reached payment page successfully!")
                     print("⚠️ Manual payment interaction required to complete order")
+                    print("   Please complete payment in the browser window")
                 else:
-                    result["final_status"] = "checkout_incomplete"
-                    print("⚠️ Checkout flow interrupted or requires additional steps")
+                    result["final_status"] = "checkout_in_progress"
+                    print("⚠️ Checkout flow in progress - may need additional steps")
 
             except Exception as e:
                 result["error"] = str(e)
+                result["final_status"] = "failed"
                 print(f"❌ Error during checkout: {e}")
 
             context.storage_state(path=self.state)
