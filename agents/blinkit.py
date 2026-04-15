@@ -26,9 +26,19 @@ class BlinkitAgent:
         """
         Search for products on Blinkit and return detailed product information.
         """
+        import os
+        
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=False)
-            context = browser.new_context(storage_state=self.state)
+            
+            storage_state = None
+            if os.path.exists(self.state):
+                storage_state = self.state
+                print(f"Using existing session: {self.state}")
+            else:
+                print("No session file - starting fresh browser")
+            
+            context = browser.new_context(storage_state=storage_state)
             page = context.new_page()
 
             print(f"🔍 Searching for: {query}")
@@ -99,6 +109,35 @@ class BlinkitAgent:
                             }}
                         }}
                         
+                        // Inventory - try multiple approaches
+                        let inventory = 0;
+                        
+                        // Approach 1: Look for inventory badge/text in card
+                        const inventoryText = card.innerText;
+                        const inventoryMatch = inventoryText.match(/(\d+)\s*in stock/i);
+                        if (inventoryMatch) {{
+                            inventory = parseInt(inventoryMatch[1]);
+                        }}
+                        
+                        // Approach 2: Check for "Only X left" pattern
+                        const onlyLeftMatch = inventoryText.match(/only\s*(\d+)\s*left/i);
+                        if (onlyLeftMatch) {{
+                            inventory = parseInt(onlyLeftMatch[1]);
+                        }}
+                        
+                        // Approach 3: Look for low stock indicator
+                        const lowStockMatch = inventoryText.match(/low stock/i);
+                        if (lowStockMatch) {{
+                            inventory = 5;  // Assume low stock is around 5
+                        }}
+                        
+                        // Approach 4: If ADD button exists with quantity selector, inventory is available
+                        const addButton = card.querySelector('.tw-rounded-md.tw-font-okra');
+                        if (addButton && addButton.innerText.trim().toUpperCase() === 'ADD') {{
+                            // Available - could be any number, default to high
+                            if (inventory === 0) inventory = 99;
+                        }}
+                        
                         // Product URL - construct from product ID
                         let url = '';
                         const productId = card.getAttribute('id');
@@ -114,8 +153,27 @@ class BlinkitAgent:
                         const image = imgElem ? imgElem.src : '';
                         
                         // Check if ADD button exists
-                        const addButton = card.querySelector('.tw-rounded-md.tw-font-okra');
                         const inStock = addButton !== null && addButton.innerText.includes('ADD');
+                        
+                        // Extract quantity from product card (if already in cart)
+                        // When in cart: shows +/- buttons with a number between them
+                        // When not in cart: shows only "ADD" button
+                        let quantity = 0;
+                        const btnContainer = addButton ? addButton.parentElement : null;
+                        
+                        if (btnContainer) {{
+                            // Check if it's a quantity selector (has +/-) vs ADD button
+                            const btnText = addButton.innerText.trim().toUpperCase();
+                            if (btnText === 'ADD') {{
+                                quantity = 0;  // Not in cart
+                            }} else {{
+                                // It's a quantity selector, extract the number
+                                const qtyMatch = btnContainer.innerText.match(/(\d+)/);
+                                if (qtyMatch) {{
+                                    quantity = parseInt(qtyMatch[1]);
+                                }}
+                            }}
+                        }}
                         
                         products.push({{
                             index: i,
@@ -127,6 +185,8 @@ class BlinkitAgent:
                             savings: originalPrice && price ? originalPrice - price : null,
                             delivery_time: '10 minutes',
                             in_stock: inStock,
+                            inventory: inventory,
+                            quantity: quantity,
                             url: url,
                             image: image
                         }});

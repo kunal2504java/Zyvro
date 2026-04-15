@@ -26,6 +26,9 @@ whatsapp_session/
 .env
 .env.local
 
+# Scraper output
+output/
+
 # Logs
 *.log
 

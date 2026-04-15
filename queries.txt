@@ -1,0 +1,14 @@
+# queries.txt — one search query per line
+# Lines starting with # are ignored
+# Use this with: python scrape.py --queries-file queries.txt
+
+milk
+eggs
+bread
+butter
+amul cheese
+chicken breast
+basmati rice
+atta
+olive oil
+yogurt
