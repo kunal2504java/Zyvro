@@ -2,15 +2,15 @@ import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { ThemeProvider } from 'next-themes' // Import ThemeProvider
+import { ThemeProvider } from 'next-themes'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'AETHER | Marketing Command Center',
-  description: 'Real-time marketing performance dashboard with campaign management, analytics, and asset vault',
+  title: 'Zyvro | Smart Grocery Inventory Tracker',
+  description: 'Track real-time inventory across Blinkit stores. Get alerts for low stock, schedule monitoring, and export data.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -41,10 +41,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body className="font-sans antialiased bg-background text-foreground min-h-screen">
-        {children}
-        <Analytics />
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-sans antialiased min-h-screen">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

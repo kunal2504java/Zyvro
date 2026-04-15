@@ -1,0 +1,21 @@
+product_id,name,variant,price,mrp,inventory,brand,eta,merchant_id,merchant_type,timestamp
+403174,Monster Energy Drink,350 ml,125.0,0.0,12,Monster,earliest,43939,express,2026-04-16T01:22:38.343758
+385,Red Bull Energy Drink (250 ml),250 ml,125.0,0.0,43,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+736741,Monster Pipeline Punch Energy Drink - 350 ml,350 ml,122.0,125.0,7,Monster,earliest,43939,express,2026-04-16T01:22:38.343758
+45655,Red Bull Energy Drink (4 x 250 ml),4 x 250 ml,480.0,0.0,10,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+68599,Glucon-D Nimbu Pani Instant Energy Drink Mix,450 g,209.0,215.0,3,Glucon-D,earliest,43939,express,2026-04-16T01:22:38.343758
+386,Red Bull Energy Drink (Sugar Free) - 250 ml,250 ml,125.0,0.0,40,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+19735,Glucon-D Tangy Orange Instant Energy Drink Mix,1 kg,395.0,409.0,6,Glucon-D,earliest,43939,express,2026-04-16T01:22:38.343758
+744430,Red Bull The Pink Edition Energy Drink,250 ml,125.0,0.0,8,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+458149,Glucon-D Orange Glucose Energy Drink - Pack of 2,2 x 450 g,414.0,430.0,3,Glucon-D,earliest,43939,express,2026-04-16T01:22:38.343758
+28323,Red Bull Energy Drink (355 ml),355 ml,165.0,0.0,9,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+41354,Glucon-D Original Energy Drink Mix,250 g,74.0,75.0,5,Glucon-D,earliest,43939,express,2026-04-16T01:22:38.343758
+267800,Red Bull Energy Drink - The Yellow Edition (250 ml),250 ml,125.0,0.0,7,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+528337,Monster Zero Sugar Ultra Energy Drink - Pack of 4,4 x 350 ml,425.0,500.0,6,Monster,earliest,43939,express,2026-04-16T01:22:38.343758
+479532,Red Bull Energy Drink - The Red Edition (250 ml),250 ml,125.0,0.0,6,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+761345,NeuroGum Energy & Focus Cinnamon Mint Candies,12 pcs,220.0,0.0,1,NeuroGum,earliest,43939,express,2026-04-16T01:22:38.343758
+732073,Red Bull Energy Drink (Blueberry & Blackcurrant),250 ml,142.0,179.0,1,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+761881,NeuroGum Energy & Focus Cinnamon Chewing Gum,9 tabs,220.0,0.0,2,NeuroGum,earliest,43939,express,2026-04-16T01:22:38.343758
+729268,Red Bull Apple & Muscat Grape Energy Drink,250 ml,127.0,159.0,3,Red Bull,earliest,43939,express,2026-04-16T01:22:38.343758
+761872,NeuroGum Energy and Focus Peppermint Chewing Gum,9 tabs,220.0,0.0,1,NeuroGum,earliest,43939,express,2026-04-16T01:22:38.343758
+747644,Red Bull Energy Drink - The Red Edition (250 ml) +  Energy Drink - The Yellow Edition (250 ml) Combo,250 ml + 250 ml,238.0,250.0,6,,earliest,43939,express,2026-04-16T01:22:38.343758

@@ -1,149 +1,196 @@
 "use client"
 
-import { DashboardLayout } from "@/components/dashboard/dashboard-layout"
-import { GlanceCard } from "@/components/dashboard/glance-card"
-import { CampaignFeed, SpendCounter } from "@/components/dashboard/campaign-feed"
-import { TrendingUp, DollarSign, Users, RefreshCw } from "lucide-react"
-import { useDashboard } from "@/context/dashboard-context"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Package, Bell, Clock, Download, BarChart3, ShoppingBot } from "lucide-react"
 
-function PulseDashboardInner() {
-  const { campaigns, metrics, dailyBudget, totalSpent, refreshMetrics } = useDashboard()
-
-  // Build glance cards from live metrics
-  const glanceCards = [
+export default function LandingPage() {
+  const features = [
     {
-      title: "Total Impressions",
-      value: metrics.totalImpressions,
-      suffix: "",
-      change: 12.5,
-      sparklineData: [30, 45, 38, 52, 48, 60, 55, 72, 68, 85, 78, 92],
+      icon: Package,
+      title: "Multi-Store Tracking",
+      description: "Track inventory across multiple Blinkit dark stores by coordinates or store ID",
+      color: "bg-green-500/20 text-green-400",
     },
     {
-      title: "Active ROAS",
-      value: metrics.activeROAS,
-      prefix: "",
-      suffix: "x",
-      change: 8.3,
-      sparklineData: [2.1, 2.8, 3.2, 2.9, 3.5, 3.8, 4.0, 3.7, 4.1, 4.0, 4.2, 4.2],
+      icon: Bell,
+      title: "Low Stock Alerts",
+      description: "Get instant notifications when items fall below threshold",
+      color: "bg-red-500/20 text-red-400",
     },
     {
-      title: "Conversion Rate",
-      value: metrics.conversionRate,
-      suffix: "%",
-      change: -2.1,
-      sparklineData: [4.2, 4.0, 3.8, 4.1, 3.9, 3.6, 3.5, 3.7, 3.6, 3.8, 3.7, 3.8],
+      icon: Clock,
+      title: "Scheduled Monitoring",
+      description: "Set up automatic inventory checks at configurable intervals",
+      color: "bg-blue-500/20 text-blue-400",
     },
     {
-      title: "Total Clicks",
-      value: metrics.totalClicks,
-      change: 15.7,
-      sparklineData: [45, 52, 48, 65, 72, 68, 85, 92, 88, 105, 112, 127],
+      icon: Download,
+      title: "Export Data",
+      description: "Export inventory to CSV or JSON with historical tracking",
+      color: "bg-purple-500/20 text-purple-400",
+    },
+    {
+      icon: BarChart3,
+      title: "Analytics Dashboard",
+      description: "Visualize inventory trends and store performance",
+      color: "bg-yellow-500/20 text-yellow-400",
+    },
+    {
+      icon: ShoppingBot,
+      title: "WhatsApp Ordering",
+      description: "Order groceries via WhatsApp using AI-powered bot",
+      color: "bg-cyan-500/20 text-cyan-400",
     },
   ]
 
-  // Calculate live stats from campaigns
-  const bestPerformer = campaigns.length > 0 
-    ? campaigns.reduce((best, c) => (c.impressions > (best?.impressions || 0)) ? c : best, campaigns[0])
-    : null
-  const totalLeads = Math.floor(metrics.totalClicks * 0.0098)
-
   return (
-    <div className="p-4 md:p-6 lg:p-8">
-      {/* Header */}
-      <div className="mb-6 md:mb-8">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-2 h-2 bg-lime pulse-live" />
-              <span className="text-xs font-mono text-muted-foreground uppercase tracking-wider">
-                Real-time Overview
-              </span>
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b bg-background/80 backdrop-blur">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold">Z</span>
             </div>
-            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Pulse Dashboard</h1>
-            <p className="text-sm md:text-base text-muted-foreground mt-1">
-              Monitor your marketing performance at a glance
-            </p>
+            <span className="text-xl font-bold">Zyvro</span>
           </div>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            onClick={refreshMetrics}
-            className="gap-2 bg-transparent"
-          >
-            <RefreshCw className="w-4 h-4" />
-            <span className="hidden sm:inline">Refresh</span>
-          </Button>
-        </div>
-      </div>
-
-      {/* Glance Cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
-        {glanceCards.map((card) => (
-          <GlanceCard
-            key={card.title}
-            title={card.title}
-            value={card.value}
-            prefix={card.prefix}
-            suffix={card.suffix}
-            change={card.change}
-            sparklineData={card.sparklineData}
-          />
-        ))}
-      </div>
-
-      {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 items-stretch">
-        {/* Campaign Feed - Takes 2 columns */}
-        <div className="lg:col-span-2 order-2 lg:order-1">
-          <CampaignFeed campaigns={campaigns} />
-        </div>
-
-        {/* Side Panel */}
-        <div className="flex flex-col gap-4 md:gap-6 order-1 lg:order-2">
-          <SpendCounter totalSpend={totalSpent} dailyBudget={dailyBudget} />
-          
-          {/* Quick Stats */}
-          <div className="bg-card border border-border p-6 flex-1">
-            <h2 className="text-sm font-medium mb-4">Today&apos;s Highlights</h2>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-lime/10 flex items-center justify-center shrink-0">
-                  <TrendingUp className="w-4 h-4 text-lime" />
-                </div>
-                <span className="text-sm flex-1">Best Performer</span>
-                <span className="text-sm font-mono text-right truncate max-w-24">
-                  {bestPerformer?.name.split(" - ")[0] || "N/A"}
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-lime/10 flex items-center justify-center shrink-0">
-                  <DollarSign className="w-4 h-4 text-lime" />
-                </div>
-                <span className="text-sm flex-1">Lowest CPA</span>
-                <span className="text-sm font-mono text-right">
-                  ${metrics.totalClicks > 0 ? (totalSpent / metrics.totalClicks * 10).toFixed(2) : "0.00"}
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-lime/10 flex items-center justify-center shrink-0">
-                  <Users className="w-4 h-4 text-lime" />
-                </div>
-                <span className="text-sm flex-1">New Leads</span>
-                <span className="text-sm font-mono text-right">{totalLeads.toLocaleString()}</span>
-              </div>
-            </div>
+          <div className="flex gap-4 items-center">
+            <Link href="/inventory" className="hover:text-green-400 transition">
+              Inventory
+            </Link>
+            <Link href="/inventory">
+              <Button className="bg-green-500 hover:bg-green-600">
+                Open Dashboard
+              </Button>
+            </Link>
           </div>
         </div>
-      </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center pt-20">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-8">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            <span className="text-sm">Live Grocery Monitoring</span>
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            Smart Grocery<br />
+            <span className="text-green-400">Inventory Tracker</span>
+          </h1>
+
+          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+            Track real-time inventory across multiple Blinkit stores.
+            Get alerts for low stock, schedule monitoring, and export data seamlessly.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/inventory">
+              <Button size="lg" className="bg-green-500 hover:bg-green-600 gap-2">
+                <BarChart3 className="w-5 h-5" />
+                Open Dashboard
+              </Button>
+            </Link>
+          </div>
+
+          {/* Quick Demo Card */}
+          <Card className="mt-16 max-w-3xl mx-auto">
+            <CardContent className="p-6">
+              <h3 className="text-lg font-semibold mb-4">Quick Stats</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="p-4 rounded-lg bg-muted">
+                  <div className="text-2xl font-bold text-green-400">15</div>
+                  <div className="text-sm text-muted-foreground">Products</div>
+                </div>
+                <div className="p-4 rounded-lg bg-muted">
+                  <div className="text-2xl font-bold text-red-400">3</div>
+                  <div className="text-sm text-muted-foreground">Low Stock</div>
+                </div>
+                <div className="p-4 rounded-lg bg-muted">
+                  <div className="text-2xl font-bold">343</div>
+                  <div className="text-sm text-muted-foreground">Total Units</div>
+                </div>
+                <div className="p-4 rounded-lg bg-muted">
+                  <div className="text-2xl font-bold">22</div>
+                  <div className="text-sm text-muted-foreground">Avg Stock</div>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-4">
+                Visit the dashboard to search products and see real-time inventory
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 border-t">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16">Features</h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, idx) => (
+              <Card key={idx} className="hover:scale-105 transition-transform">
+                <CardContent className="p-8">
+                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${feature.color}`}>
+                    <feature.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-20 bg-muted/50 border-t">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16">How It Works</h2>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+              <h3 className="font-semibold mb-2">Set Location</h3>
+              <p className="text-muted-foreground text-sm">Choose store by coordinates or ID</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+              <h3 className="font-semibold mb-2">Search Products</h3>
+              <p className="text-muted-foreground text-sm">Enter product name to search</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+              <h3 className="font-semibold mb-2">View Inventory</h3>
+              <p className="text-muted-foreground text-sm">See real-time stock levels</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+              <h3 className="font-semibold mb-2">Get Alerts</h3>
+              <p className="text-muted-foreground text-sm">Monitored automatically</p>
+            </div>
+          </div>
+
+          <div className="mt-16 text-center">
+            <Link href="/inventory">
+              <Button size="lg" className="bg-green-500 hover:bg-green-600">
+                Open Full Dashboard
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 border-t">
+        <div className="max-w-7xl mx-auto px-6 text-center text-muted-foreground">
+          <p>&copy; 2026 Zyvro. Smart Grocery Automation.</p>
+        </div>
+      </footer>
     </div>
-  )
-}
-
-export default function PulseDashboard() {
-  return (
-    <DashboardLayout>
-      <PulseDashboardInner />
-    </DashboardLayout>
   )
 }

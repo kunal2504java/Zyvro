@@ -1,0 +1,11 @@
+product_id,name,variant,price,mrp,inventory,brand,eta,merchant_id,merchant_type,timestamp
+561268,Amul Gold Full Cream Milk,1 ltr,69.0,0.0,38,Amul,earliest,43939,express,2026-04-16T00:52:01.562529
+561270,Amul Taaza Toned Milk,1 ltr,57.0,0.0,43,Amul,earliest,43939,express,2026-04-16T00:52:01.562529
+19925,Mother Dairy Toned Milk,500 ml,29.0,0.0,1,Mother Dairy,earliest,43939,express,2026-04-16T00:52:01.562529
+560906,Mother Dairy Cow Milk,1 ltr,59.0,0.0,6,Mother Dairy,earliest,43939,express,2026-04-16T00:52:01.562529
+160704,Amul Cow Milk,500 ml,30.0,0.0,50,Amul,earliest,43939,express,2026-04-16T00:52:01.562529
+176,Amul Taaza Homogenised Toned Milk,1 ltr,77.0,0.0,50,Amul,earliest,43939,express,2026-04-16T00:52:01.562529
+101192,Mother Dairy Double Toned Milk,500 ml,26.0,0.0,19,Mother Dairy,earliest,43939,express,2026-04-16T00:52:01.562529
+522807,Amul Buffalo A2 Milk,500 ml,38.0,0.0,1,Amul,earliest,43939,express,2026-04-16T00:52:01.562529
+206314,Amul Lactose Free Milk,250 ml,26.0,0.0,50,Amul,earliest,43939,express,2026-04-16T00:52:01.562529
+34778,Amul Moti Toned Milk (90 Days Shelf Life),450 ml,32.0,0.0,50,Amul,earliest,43939,express,2026-04-16T00:52:01.562529

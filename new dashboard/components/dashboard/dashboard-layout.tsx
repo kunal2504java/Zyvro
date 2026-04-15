@@ -32,10 +32,10 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                 <Menu className="w-5 h-5" />
               </button>
               <Link href="/" className="flex items-center gap-2">
-                <div className="w-6 h-6 bg-lime flex items-center justify-center">
-                  <span className="text-background font-mono text-xs font-bold">A</span>
+                <div className="w-6 h-6 bg-green-500 flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">Z</span>
                 </div>
-                <span className="font-semibold">AETHER</span>
+                <span className="font-semibold">Zyvro</span>
               </Link>
             </div>
             <button 

@@ -422,11 +422,11 @@ def main():
     if products:
         print(f"\nFound {len(products)} products")
         if alerts:
-            print(f"⚠️  {len(alerts)} LOW STOCK ITEMS:")
+            print(f"WARNING: {len(alerts)} LOW STOCK ITEMS:")
         
         for i, p in enumerate(products, 1):
             stock_status = "LOW" if p['inventory'] < 5 else "OK"
-            alert_marker = " ⚠️" if p['inventory'] < 5 else ""
+            alert_marker = " (!)" if p['inventory'] < 5 else ""
             
             print(f"{i}. {p['name']}")
             print(f"   {p['variant']} | Rs.{p['price']} | Stock: {p['inventory']} ({stock_status}){alert_marker}")

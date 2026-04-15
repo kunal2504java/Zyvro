@@ -5,27 +5,17 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import {
   Activity,
-  BarChart3,
-  Calendar,
-  ImageIcon,
-  Users,
-  Wallet,
+  Package,
   Settings,
   Search,
   Command,
   X,
-  Package,
 } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 
 const navItems = [
-  { href: "/", label: "Pulse", icon: Activity, description: "Overview" },
+  { href: "/", label: "Home", icon: Activity, description: "Overview" },
   { href: "/inventory", label: "Inventory", icon: Package, description: "Stock Tracking" },
-  { href: "/architect", label: "Architect", icon: Calendar, description: "Campaigns" },
-  { href: "/analytics", label: "Engine", icon: BarChart3, description: "Analytics" },
-  { href: "/assets", label: "Vault", icon: ImageIcon, description: "Assets" },
-  { href: "/audience", label: "Intel", icon: Users, description: "Audience" },
-  { href: "/budget", label: "Budget", icon: Wallet, description: "Finance" },
 ]
 
 interface SidebarProps {
