@@ -75,7 +75,7 @@ class BlinkitInventoryTracker:
             page.goto(url, wait_until="networkidle", timeout=30000)
             page.wait_for_timeout(2000)
             
-            context.storage_state(path=self.state_file)
+            # Don't save storage state - always use fresh sessions for accurate location
             browser.close()
             
             products = []
