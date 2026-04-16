@@ -45,14 +45,12 @@ class BlinkitInventoryTracker:
         print(f"Store set to ID: {store_id}")
     
     def _load_state(self):
-        if os.path.exists(self.state_file):
-            return self.state_file
-        return None
+        return None  # Don't use cached state - always get fresh location
     
     def search(self, query, limit=20):
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=False)
-            context = browser.new_context(storage_state=self._load_state())
+            context = browser.new_context()
             page = context.new_page()
             
             api_data = []

@@ -109,6 +109,33 @@ def get_locations():
     
     return jsonify({"locations": locations})
 
+@app.route('/api/stores')
+def get_stores():
+    """Get all stores from CSV"""
+    import csv
+    stores_file = BASE_DIR / "Blinkit_Store_Locations_20260416_092756.csv"
+    
+    if not stores_file.exists():
+        return jsonify({"stores": [], "cities": []})
+    
+    stores = []
+    cities = set()
+    
+    with open(stores_file, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            store_id = row['Store ID']
+            city = row['City']
+            pincode = row['Pincode']
+            stores.append({"store_id": store_id, "city": city, "pincode": pincode})
+            cities.add(city)
+    
+    return jsonify({
+        "stores": stores,
+        "cities": sorted(list(cities)),
+        "count": len(stores)
+    })
+
 
 if __name__ == '__main__':
     import os

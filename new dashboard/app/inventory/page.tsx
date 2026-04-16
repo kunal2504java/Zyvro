@@ -23,6 +23,12 @@ interface Product {
   merchant_id: string
 }
 
+interface Store {
+  store_id: string
+  city: string
+  pincode: string
+}
+
 interface Alert {
   type: string
   name: string
@@ -36,6 +42,9 @@ export default function InventoryDashboard() {
   const [loading, setLoading] = useState(false)
   const [searchQuery, setSearchQuery] = useState("milk")
   const [selectedLocation, setSelectedLocation] = useState("store_43939")
+  const [stores, setStores] = useState<Store[]>([])
+  const [cities, setCities] = useState<string[]>([])
+  const [selectedCity, setSelectedCity] = useState("New Delhi")
   const [error, setError] = useState("")
 
   // Fetch inventory data directly from Flask
@@ -73,7 +82,21 @@ export default function InventoryDashboard() {
   useEffect(() => {
     fetchInventory(false)
     fetchAlerts()
+    fetchStores()
   }, [])
+
+  const fetchStores = async () => {
+    try {
+      const res = await fetch(`${FLASK_API}/stores`)
+      const data = await res.json()
+      setStores(data.stores || [])
+      setCities(data.cities || [])
+    } catch (e) {
+      console.error("Failed to fetch stores:", e)
+    }
+  }
+
+  const cityStores = stores.filter(s => s.city === selectedCity)
 
   // Calculate metrics
   const totalProducts = products.length
@@ -138,17 +161,30 @@ export default function InventoryDashboard() {
                   onKeyDown={(e) => e.key === 'Enter' && fetchInventory(true)}
                   className="flex-1"
                 />
-                <Select value={selectedLocation} onValueChange={setSelectedLocation}>
-                  <SelectTrigger className="w-56">
-                    <SelectValue placeholder="Store" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="store_43939">Express Store 1 (ID: 43939)</SelectItem>
-                    <SelectItem value="store_44001">Express Store 2 (ID: 44001)</SelectItem>
-                    <SelectItem value="store_43939">Dwarka (43939)</SelectItem>
-                    <SelectItem value="store_44001">Rajouri (44001)</SelectItem>
-                  </SelectContent>
-                </Select>
+                <div className="flex gap-2">
+                  <Select value={selectedCity} onValueChange={setSelectedCity}>
+                    <SelectTrigger className="w-40">
+                      <SelectValue placeholder="City" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {cities.map(city => (
+                        <SelectItem key={city} value={city}>{city}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <Select value={selectedLocation} onValueChange={setSelectedLocation}>
+                    <SelectTrigger className="w-40">
+                      <SelectValue placeholder="Store" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {cityStores.map(store => (
+                        <SelectItem key={store.store_id} value={`store_${store.store_id}`}>
+                          {store.store_id} ({store.pincode})
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
                 <Button onClick={() => fetchInventory(true)}>
                   <Search className="w-4 h-4" />
                 </Button>
